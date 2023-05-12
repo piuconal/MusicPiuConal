@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PiuMusic-Nghe nhạc thỏa thích, nhích phát yêu luôn</title>
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="icon" href="/MusicPiuConal/assets/logopr.jpg">
+    <script src="https://kit.fontawesome.com/f0add9272d.js"></script>
+</head>
+
+<body>
+    <!-- login -->
+    <div id="login-form-container">
+        <!-- Login form HTML code here -->
+        <form>
+            <div class="login">
+                <input type="text" id="username" name="username" placeholder="Username">
+                <input type="password" id="password" name="password" placeholder="Password">
+            </div>
+
+            <div class="dangnhap">
+                <button type="submit">Đăng nhập</button>
+            </div>
+
+            <div class="loginwith">
+                <ul>
+                    <li>
+                        <button type="button" class="fbook"><i class="fa-brands fa-facebook"></i></button>
+
+                    </li>
+                    <li>
+                        <button type="button" class="gle"><i class="fa-brands fa-google"></i></button>
+                    </li>
+                </ul>
+            </div>
+        </form>
+
+    </div>
+    <!-- logout -->
+    <div id="logout-form-container">
+        <!-- Logout form HTML code here -->
+        <form>
+            <div class="logout">
+                <button type="submit" onclick="thayDoiIcon2()">Đăng xuất</button>
+            </div>
+        </form>
+
+    </div>
+    <!-- signup -->
+    <div id="signup-form-container">
+        <!-- Signup form HTML code here -->
+        <form name="signup-form" onsubmit="return validateForm()">
+            <div class="signup">
+                <input type="text" id="full-name" name="username" placeholder="Username">
+                <input type="password" id="mk" name="password" placeholder="Password">
+                <input type="password" id="repassword" name="repassword" placeholder="Re - Password">
+                <input type="email" id="email" name="email" placeholder="Email">
+            </div>
+
+            <div class="dangky">
+                <button type="submit">Đăng ký</button>
+            </div>
+        </form>
+    </div>
+    <!-- Content -->
+    <div class="main">
+        <div class="menu">
+
+            <div class="profile">
+                <img src="/assets/logopr.jpg" width="40px">
+            </div>
+
+            <ul class="menu1">
+                <li><i class="fa-solid fa-house"></i></li>
+                <li><i id="icon-library" class="fa-solid fa-book-open"></i></li>
+                <li><i id="icon-like" class="fa-solid fa-heart"></i></li>
+            </ul>
+
+            <ul class="menu2">
+                <li><i id="icon-dangnhap" class="fa-solid fa-right-to-bracket"></i></li>
+                <li><i class="fa-solid fa-user-plus"></i></li>
+            </ul>
+
+            <ul class="menu3">
+                <li><i class="fa-sharp fa-solid fa-gear"></i></li>
+            </ul>
+        </div>
+
+        <div class="homemusic">
+            <!-- title -->
+            <div class="title">
+                <h1 class="h1homemusic">Home</h1>
+                <div class="note">
+                    <i class="fa-solid fa-bell"></i>
+                    <input type="text" placeholder="Search music or artist ....">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+
+            <!-- slideshow -->
+            <div class="slideshow">
+                <img class="slide" src="/assets/slide1.png">
+                <img class="slide" src="/assets/slide2.png">
+                <img class="slide" src="/assets/slide3.png">
+                <img class="slide" src="/assets/slide4.png">
+            </div>
+
+            <!-- topartist -->
+            <div class="topartist">
+                <h1>Top Artist</h1>
+                <ul>
+                    <li>
+                        <div class="artist">
+                            <img id="img1"
+                                src="https://imgs.search.brave.com/df1eBhj1h_veAfw4OLe2Nn7fd-pLdtrVXy0WwUkK2To/rs:fit:800:824:1/g:ce/aHR0cHM6Ly9yZXZp/ZXdkYW8udm4vd3At/Y29udGVudC91cGxv/YWRzLzIwMjAvMTIv/dGltLWhpZXUtdmUt/Y2EtbmhhYy1zaS1z/b24tdHVuZy1tdHAu/anBn"
+                                width="100%" alt="">
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="artist">
+                            <img id="img2"
+                                src="https://imgs.search.brave.com/g0Rd72zeVIyQRtpKJgG_RZlxju5PjbtaTL4pl63Dnsc/rs:fit:500:500:1/g:ce/aHR0cHM6Ly9pMS5z/bmRjZG4uY29tL2Fy/dHdvcmtzLW1jV3BF/bEZ0YTdBSzN2U3gt/ZTA3SmhRLXQ1MDB4/NTAwLmpwZw"
+                                width="100%" alt="">
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="artist">
+                            <img id="img3"
+                                src="https://imgs.search.brave.com/Sc_NjwF4FRdgr91vhJwtk70TSkV0aZODb-oQ5nV684A/rs:fit:640:640:1/g:ce/aHR0cHM6Ly93d3cu/dnBvcHdpcmUuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDIw/LzAzL3BoYW4tbWFu/aC1xdXluaC12cG9w/LmpwZw"
+                                width="100%" alt="">
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="artist">
+                            <img id="img4"
+                                src="https://imgs.search.brave.com/ehPkSQ0fEk6JdorUmnQ921n3aqzhrtHH2QkQo6ZzTXg/rs:fit:640:640:1/g:ce/aHR0cHM6Ly9pLnNj/ZG4uY28vaW1hZ2Uv/YWI2NzYxNjEwMDAw/ZTVlYmYyZGI0ODc1/YzgxZjRkMTAzYWVm/YzgxYQ"
+                                width="100%" alt="">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <!-- trending -->
+                <div class="trendingrightnow">
+                    <h3>Trending right now</h3>
+                    <ul>
+                        <li>
+                            <div class="trend1">
+                                <div class="picture1">
+                                    <img src="https://yt3.googleusercontent.com/mm2-5anuZ6ghmK2zL6QM7wciD6kuupOfOagiAh5vZE1hx9tRhKEXTAExZUUY4PVq2RSw9jBpBQ=s176-c-k-c0x00ffffff-no-rj"
+                                        alt="" width="100%">
+                                </div>
+
+                                <div class="name">
+                                    <div class="namemusic">
+                                        <audio id="my-audio-element" src="/assets/test1.mp3"></audio>
+                                        <h1>Making my way</h1>
+                                    </div>
+
+                                    <div class="nameartist">
+                                        <h2>Sơn Tùng M-TP</h2>
+                                    </div>
+                                </div>
+
+                                <div class="likemusic">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="trend2">
+                                <div class="picture2">
+                                    <img src="https://imgs.search.brave.com/543NmuUg-qF7IBfjzSfAMMVwSblce7Z_EbGFKAjr5zY/rs:fit:500:500:1/g:ce/aHR0cHM6Ly9pMS5z/bmRjZG4uY29tL2Fy/dHdvcmtzLUl2cHFE/ZGNzUnowNUVQZnkt/Q21EYWt3LXQ1MDB4/NTAwLmpwZw"
+                                        width="100%" alt="">
+                                </div>
+
+                                <div class="name">
+                                    <div class="namemusic">
+                                        <audio id="my-audio-element2" src="/assets/test2.mp3"></audio>
+                                        <h1></h1>
+                                        <h1>Waiting For You</h1>
+                                    </div>
+
+                                    <div class="nameartist">
+                                        <h2>Mono</h2>
+                                    </div>
+                                </div>
+
+                                <div class="likemusic">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="trend3">
+                                <div class="picture3">
+                                    <img src="https://imgs.search.brave.com/iCtryeRNaBc5zy4pU_9JpfPUohJbJquCu1TNphGC-TA/rs:fit:960:960:1/g:ce/aHR0cHM6Ly9rZW5o/MTRjZG4uY29tLzIw/MTgvMTIvMjkvdWUt/MTU0NjA1NDg1MTQ4/MDQzNDM4MDk3MC5q/cGc"
+                                        width="100%" alt="">
+                                </div>
+
+                                <div class="name">
+                                    <div class="namemusic">
+                                        <audio id="my-audio-element3" src="/assets/test3.mp3"></audio>
+                                        <h1>Vợ người ta</h1>
+                                    </div>
+
+                                    <div class="nameartist">
+                                        <h2>Phan Mạnh Quỳnh</h2>
+                                    </div>
+                                </div>
+
+                                <div class="likemusic">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="trend4">
+                                <div class="picture4">
+                                    <img src="https://imgs.search.brave.com/IlTtU7KLl5j6vyg7VH4DdXfv8DvYrxhd0YCtqN4RSmc/rs:fit:640:640:1/g:ce/aHR0cHM6Ly9pLnNj/ZG4uY28vaW1hZ2Uv/YWI2NzYxNmQwMDAw/YjI3Mzk1MzNkN2Nh/M2I1N2Q5YjBlMzNk/N2RjMw"
+                                        width="100%" alt="">
+                                </div>
+
+                                <div class="name">
+                                    <div class="namemusic">
+                                        <audio id="my-audio-element4" src="/assets/test4.mp3"></audio>
+                                        <h1>Ấn nút nhớ thả giấc mơ</h1>
+                                    </div>
+
+                                    <div class="nameartist">
+                                        <h2>Sơn Tùng M-TP</h2>
+                                    </div>
+                                </div>
+
+                                <div class="likemusic">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="trend5">
+                                <div class="picture5">
+                                    <img src="https://imgs.search.brave.com/ZJ8t0WOywMalenCzhXslUOD6zum_kFEISPBh2BXQPRE/rs:fit:600:557:1/g:ce/aHR0cHM6Ly9pLnZk/b2Mudm4vZGF0YS9p/bWFnZS8yMDE2LzAz/LzE3L2xvaS1iYWkt/aGF0LWtodW9uLW1h/dC1kYW5nLXRodW9u/Zy5qcGc"
+                                        width="100%" alt="">
+                                </div>
+
+                                <div class="name">
+                                    <div class="namemusic">
+                                        <audio id="my-audio-element5" src="/assets/test5.mp3"></audio>
+                                        <h1>Khuôn mặt đáng thương</h1>
+                                    </div>
+
+                                    <div class="nameartist">
+                                        <h2>Sơn Tùng M-TP</h2>
+                                    </div>
+                                </div>
+
+                                <div class="likemusic">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- recent favourite -->
+                <div class="recent">
+                    <h1>Recent favourites</h1>
+                    <ul class="recentfa1">
+                        <li>
+                            <div class="recent1">
+                                <img id="re1"
+                                    src="https://imgs.search.brave.com/njMv61K_w_UC14oZ9aAAbw10QsbkIsqQzz702I2Nlwo/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9pMS53/cC5jb20vZWRtaWRl/bnRpdHkuY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDE3LzA5/L0dPVE8tMDk2Mi5q/cGc_Zml0PTIwNDgl/MkMxMzY1JnNzbD0x"
+                                    width="100%" height="100px" alt="">
+                            </div>
+
+                            <div class="namefa">
+                                <h3>EDM</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="recent1">
+                                <img id="re2"
+                                    src="https://imgs.search.brave.com/nxwwuGKcQJbk5GQU81BfwdXVd0U5AunuQQlY-q3CVVk/rs:fit:1200:990:1/g:ce/aHR0cHM6Ly9taXIt/czMtY2RuLWNmLmJl/aGFuY2UubmV0L3By/b2plY3RfbW9kdWxl/cy8xNDAwLzkxOWJk/NTEzNjMyNDAxLjU2/Mjc2M2M4NTQ3NGQu/anBn"
+                                    width="100%" height="100px" alt="">
+                            </div>
+
+                            <div class="namefa">
+                                <h3>Pop</h3>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="recentfa2">
+                        <li>
+                            <div class="recent1">
+                                <img id="re3"
+                                    src="https://imgs.search.brave.com/D10jgpnyuP8n4fLDJADXd-D3Is7QNKvCYxHYi3O0XIc/rs:fit:1200:720:1/g:ce/aHR0cHM6Ly9pLnl0/aW1nLmNvbS92aS9S/UDdrZmg2NFB6WS9t/YXhyZXNkZWZhdWx0/LmpwZw"
+                                    width="100%" height="100px" alt="">
+                            </div>
+
+                            <div class="namefa">
+                                <h3>Ballad</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="recent1">
+                                <img id="re4"
+                                    src="https://imgs.search.brave.com/w9daveRKQZo-dvsfxLbn2WCfQkN4pmZIwLYPMC9S66k/rs:fit:1200:1200:1/g:ce/aHR0cDovL3dhbGxw/YXBlcmNhdmUuY29t/L3dwL1lGMUZUTmsu/anBn"
+                                    width="100%" height="100px" alt="">
+                            </div>
+
+                            <div class="namefa">
+                                <h3>Rock</h3>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- show AI content -->
+                <div class="showai">
+                    <video width="100%" height="240" autoplay>
+                        <source src="/assets/showai.mp4" type="video/mp4">
+                    </video>
+                    <audio autoplay>
+                        <source src="/assets/musicai.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+
+            <!-- like -->
+            <div class="like">
+                <div class="listmusiclike">
+                    <ul class="scrollable">
+                        <li class="music1like">
+
+                        </li>
+                        <li class="music2like">
+
+                        </li>
+                        <li class="music3like">
+
+                        </li>
+                        <li class="music4like">
+
+                        </li>
+                        <li class="music5like">
+
+                        </li>
+                        <li class="music6like">
+
+                        </li>
+                        <li class="music7like">
+
+                        </li>
+                        <li class="music8like">
+
+                        </li>
+                        <li class="music9like">
+
+                        </li>
+                        <li class="music10like">
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- like music -->
+        <div class="playmusiclike">
+            <div class="pictureplaymusiclike">
+
+            </div>
+        </div>
+
+        <!-- button playmusiclike -->
+        <div class="buttonplaymusiclike">
+            <!-- <div class="volummusic">
+                <i class="fa-sharp fa-solid fa-volume-high"></i>
+                <input type="range" min="0" max="1" step="0.05" value="0.5" id="volume-slider">
+            </div> -->
+
+            <!-- <div id="audio-container">
+                <audio id="my-audio-element" src="/assets/test.mp3"></audio>
+                <div id="progress-bar-container">
+                    <div id="progress-bar"></div>
+                </div>
+                <div id="time-container">
+                    <span id="current-time">00:00</span>
+                    <span id="duration">00:00</span>
+                </div>
+            </div>
+
+
+            <div class="buttonmusic">
+                <ul>
+                    <li>
+                        <button id="like">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </li>
+
+                    <li>
+                        <button id="back">
+                            <i class="fa-sharp fa-solid fa-backward"></i>
+                        </button>
+                    </li>
+
+                    <li>
+                        <button id="play" onclick="changeButton()">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+                    </li>
+
+                    <li>
+                        <button id="continue">
+                            <i class="fa-sharp fa-solid fa-forward"></i>
+                        </button>
+                    </li>
+
+                    <li>
+                        <button id="repeat">
+                            <i class="fa-solid fa-repeat"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div> -->
+        </div>
+
+        <!-- playmusic -->
+        <div class="playmusic">
+            <div class="musicpicture">
+                <img id="mspicture" src="https://th.bing.com/th/id/OIP.VBMwPM07lDxKFUg6mUHr9gHaHa?pid=ImgDet&rs=1"
+                    alt="" width="100%" height="150px">
+            </div>
+
+            <div class="volummusic">
+                <i class="fa-sharp fa-solid fa-volume-high"></i>
+                <input type="range" min="0" max="1" step="0.05" value="0.5" id="volume-slider">
+            </div>
+
+            <div id="audio-container">
+                <div id="progress-bar-container">
+                    <div id="progress-bar"></div>
+                </div>
+                <div id="time-container">
+                    <span id="current-time">00:00</span>
+                </div>
+            </div>
+
+            <div class="buttonmusic">
+                <ul>
+                    <li>
+                        <button id="like">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </li>
+
+                    <li>
+                        <button id="back">
+                            <i class="fa-sharp fa-solid fa-backward"></i>
+                        </button>
+                    </li>
+
+                    <li>
+                        <button id="play" onclick="changeButton()">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+                    </li>
+
+                    <li>
+                        <button id="continue">
+                            <i class="fa-sharp fa-solid fa-forward"></i>
+                        </button>
+                    </li>
+
+                    <li>
+                        <button id="repeat">
+                            <i class="fa-solid fa-repeat"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Contact -->
+    <div class="contact">
+        <ul>
+            <li><a href="https://www.facebook.com/piu1106/"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-github-alt"></i></a></li>
+        </ul>
+    </div>
+    <script src="/js/home.js"></script>
+    <script src="/js/signup.js"></script>
+    <script src="/js/login.js"></script>
+</body>
+
+</html>
